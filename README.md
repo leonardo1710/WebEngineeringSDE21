@@ -8,10 +8,12 @@ This repository provides demo applications presented in the course of Web Engine
 3. Vue Demos
 
 ### HTML and CSS
-[Demo Project with HTML5 and CSS3](https://link)
+[HTML and CSS Project Template](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/HTML_CSS_Basics/simple_demo_project)
+
+[Demo Project with HTML5 and CSS3](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/HTML_CSS_Basics/simple_multipage_project)
 
 ### Javascript
-[Basic concepts](https://link)
+[Basic concepts](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/Javascript/Basics)
 
 [DOM-API](https://link)
 
