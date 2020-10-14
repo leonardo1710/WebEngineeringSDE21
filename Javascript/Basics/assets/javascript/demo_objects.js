@@ -79,5 +79,45 @@
     console.log("I am " + age + " years old.");
   }
 
+  // arrays are objects
+  let fruits = ["banana", "apple", "lemon"];
+
+  console.log("Type of array: " + typeof fruits);
+
+  // better
+  let fruits2 = [
+      "banana",
+      "apple",
+      "lemon"
+  ];
+
+  let fruits3 = new Array("banana", "apple", "lemon");
+
+  //try to avoid "new Array" syntax!
+  var myArr = new Array(40, 100);   // Creates an array with two elements (40 and 100)
+  var myArr2 = new Array(40);        // Creates an array with 40 undefined elements!
+
+  console.log('myArr :>> ', myArr);
+  console.log('myArr2 :>> ', myArr2);
+
+  //editing
+  fruits2[0] = "pear";
+
+  //iteration
+  fruits3.forEach(function(item){
+    console.log(item);
+  })
+
+  //iteration with index
+  fruits3.forEach(function(item, index){
+    console.log(item + " " + index);
+  })
+
+  //adding elements
+  fruits3.push("papaya");
+
+
+
+
 
 
