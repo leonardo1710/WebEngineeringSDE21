@@ -19,28 +19,38 @@
         </nav>
 
         <main>
-            <h1 class="main-title-grid">Dom Manipulation with JS</h1>
-            <article class="main-left-grid">
-                <div class="first-row">
+            <h1 class="grid-row">Dom Manipulation with JS</h1>
+
+            <div class="grid-row">
+                <div class="grid-col">
                     <!-- Inline OnClick Listener -->
                     <button class="btn-primary" onclick="app.addNewItem();">Add new Item</button>
                 </div>
+                <div class="grid-col"></div>
+            </div>
 
-                <div class="second-row">
-                    <h1>List of Objects</h1>
-                    <ul class="listgroup" id="item-list">
-                        <!-- List gets appended with JS -->
-                    </ul>
-                </div>
-                
-            </article>
+            <div class="grid-col-4">
+                <h1>List of Objects</h1>
+            </div>
+            <div class="grid-col-4"></div>
 
-            <article class="main-right-grid">
+            <div class="grid-col-4">
                 <h1>Wishlist</h1>
+            </div>
+
+            <div class="grid-col-4">
+                <ul class="listgroup" id="item-list">
+                    <!-- List gets appended with JS -->
+                </ul>
+            </div>
+
+            <div class="grid-col-4"></div>
+
+            <div class="grid-col-4">
                 <ul class="listgroup" id="wishlist">
                     <!-- List gets appended with JS -->
                 </ul>
-            </article>
+            </div>
         </main>
         
 

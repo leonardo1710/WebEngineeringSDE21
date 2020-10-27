@@ -17,12 +17,23 @@ a:hover{
 
 main{
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
     margin: 3.5em 0.5em 0.5em 0.5em;
     min-height: 100%;
-    grid-template-areas:
-    'header header header header header'
-    'content-left content-left space content-right content-right';
     grid-gap: 0.5em;
+    justify-content: center;
+}
+
+.grid-row{
+    grid-column: span 12;
+}
+
+.grid-col-6{
+    grid-column: span 6;
+}
+
+.grid-col-4{
+    grid-column: span 4;
 }
 
 /* Navigation */
@@ -104,25 +115,3 @@ nav> ul > li {
     text-decoration: none;
 }
 
-.main-title-grid{
-    grid-area: header;
-}
-
-
-.main-left-grid{
-    grid-area: content-left;
-    display: grid;
-}
-
-.main-right-grid{
-    grid-area: content-right;
-    display: grid;
-}
-
-.first-row{
-    grid-row: 1;
-}
-
-.second-row{
-    grid-row: 2;
-}
