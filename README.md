@@ -42,6 +42,7 @@ This repository provides demo applications presented in the course of Web Engine
 
 ### Modern Project Setup
 [Project Setup from Lecture](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/modernJSProjectSetup)
+
 [Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev server and an optimized production build.](https://github.com/taniarascia/webpack-boilerplate)
 
 ### Vue.js
