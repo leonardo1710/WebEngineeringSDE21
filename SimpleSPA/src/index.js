@@ -13,24 +13,23 @@ const navigateTo = url => {
   router();
 };
 
-const router = async () => {
+const router = async () => {  //async because contents will be loaded from other files
   const routes = [
       { path: "/", view: Dashboard },
       { path: "/about", view: About },
-      { path: "/profile/:id" },
       { path: "/profile", view: Profile }
   ];
 
-  const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
-
+  //map all route matches
   const potentialMatches = routes.map(route => {
     return {
         route,
-        result: location.pathname.match(pathToRegex(route.path))
+        isMatch: location.pathname === route.path
     };
   });
 
-  let match = potentialMatches.find(potentialMatch => potentialMatch.result !== null);
+
+  let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
 
   /* Route not found - return first route OR a specific "not-found" route */
   if (!match) {

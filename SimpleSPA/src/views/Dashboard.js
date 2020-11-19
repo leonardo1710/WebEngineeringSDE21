@@ -9,6 +9,11 @@ export default class extends AbstractView {
     async getHtml() {
         return `
             <h1>Welcome to SPA App!</h1>
+            <div>
+            <input type="range" id="volume" name="volume"
+                    min="0" max="11">
+            <label for="volume">Volume</label>
+            </div>
             <p>Some Text. Balbals</p>
         `;
     }
