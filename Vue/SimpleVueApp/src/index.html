@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <h1>Simple Vue Application</h1>
+
+
+
+    <div id="app">
+      <h2>{{ message }}</h2>
+
+      <h3>Loops in Vue</h3>
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+
+
+      <h3>Conditionals and User input in Vue</h3>
+      <button v-on:click="doSomething">Do something</button>
+
+      <div v-if="visible">Now I am visible.</div>
+      <div  v-else>Other div invisible.</div>
+      
+     
+      <!-- v-model creates two way data bindings in forms -->
+      <input v-model="todoText" type="text" />
+      <button v-on:click="addTodo">Add Todo</button>
+
+
+      <h3>Computed Properties</h3>
+      <p> {{ reverseSentence }} </p>
+      <p> {{ reverseASentence() }} </p>
+
+
+      <h3>Binding Styles</h3>
+      <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }">My Text</div>
+    </div>
+
+    <div id="app-2">
+      <h2 id="header">{{ message }}</h2>
+    </div>
+
+
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
