@@ -45,6 +45,21 @@ This repository provides demo applications presented in the course of Web Engine
 
 [Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev server and an optimized production build.](https://github.com/taniarascia/webpack-boilerplate)
 
+### SPA with plain JS
+
+[Simple SPA with Webpack Setup](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleSPA)
+
+[Another simple SPA Copyright (c) 2019 Santiago García da Rosa](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleSPA2)
+
 ### Vue.js
-In progress.
+[Simple Vue App - Demo](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/Vue/SimpleVueApp)
+
+[Vue CLI App with VueRouter and Vuex](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/Vue/VueCLIApp)
+
+[Real World Example Vue App - Best Practices](https://github.com/gothinkster/vue-realworld-example-app)
+
+### Backend
+[Simple Express REST Backend](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleExpressBackend)
+
+[Advanced Express REST Backend](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/ExampleExpressBackend)
 
