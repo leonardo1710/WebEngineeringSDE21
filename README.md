@@ -59,7 +59,7 @@ This repository provides demo applications presented in the course of Web Engine
 [Real World Example Vue App - Best Practices](https://github.com/gothinkster/vue-realworld-example-app)
 
 ### Backend
-[Simple Express REST Backend](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleExpressBackend)
+[Simple Express REST Backend with Authentication](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleExpressBackend)
 
 [Advanced Express REST Backend](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/ExampleExpressBackend)
 
