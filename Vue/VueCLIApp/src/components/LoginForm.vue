@@ -77,6 +77,7 @@ export default {
 
         let email = this.form.email;
         let password = this.form.password;
+        
         this.$store
           .dispatch("login", { email, password }) //call login action from vuex state
           .then(response => {

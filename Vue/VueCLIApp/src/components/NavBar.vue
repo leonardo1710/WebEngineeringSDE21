@@ -13,6 +13,8 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
 
+          <b-nav-item v-if="isAuthenticated" @click="logout">Logout</b-nav-item>
+
           <b-nav-item-dropdown text="More" right>
             <b-dropdown-item to="/login">Login</b-dropdown-item>
           </b-nav-item-dropdown>
@@ -24,10 +26,24 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: 'NavBar',
   props: {
     appTitle: String
+  },
+  computed: {
+    ...mapGetters(["isAuthenticated", "currentUser"])
+  },
+  methods: {
+    logout(){
+      this.$store
+          .dispatch("logout") 
+          .then(response => {
+              console.log(response);
+          })
+    }
   }
 }
 </script>

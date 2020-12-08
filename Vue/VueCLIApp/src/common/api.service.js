@@ -1,7 +1,7 @@
 import Vue from "vue";
 import axios from 'axios';
 import VueAxios from "vue-axios";
-import { API_URL } from "@/common/config";
+import { CONFIG } from "@/common/config";
 
 export const ApiService = {
   init,
@@ -17,7 +17,7 @@ export const ApiService = {
 
 function init() {
   Vue.use(VueAxios, axios);
-  Vue.axios.defaults.baseURL = API_URL;
+  Vue.axios.defaults.baseURL = CONFIG.API_URL;
 }
 
 function setHeader() {

@@ -1,4 +1,5 @@
 import { userService } from "@/services";
+import { resolve } from "core-js/fn/promise";
 
 const state = {
   errors: null,
@@ -20,8 +21,11 @@ const actions = {
     return new Promise(resolve => {
       userService.login(credentials)
           .then(response => {
-              context.commit("setAuth", response.data.message);
-              resolve(response.data.message);
+              if(response.data.message.token){
+                localStorage.setItem('token', JSON.stringify(response.data.message.token));
+                context.commit("setAuth", response.data.message.user);
+                resolve(response.data.message.user);
+              }
           })
           .catch(response =>{
             console.log(response);
@@ -31,6 +35,15 @@ const actions = {
   },
   logout(context) {
     context.commit("destroyAuth");
+    localStorage.removeItem('token');
+    
+    userService.logout()
+      .then(response => {
+          resolve(response.data.message);
+      })
+      .catch(error =>{
+        console.log(error);
+      })
   }
 };
 
@@ -39,6 +52,9 @@ const mutations = {
     state.errors = error;
   },
   setAuth(state, user) {
+    console.log("setAuth");
+    console.log('user :>> ', user);
+    console.log('state :>> ', state);
     state.isAuthenticated = true;
     state.user = user;
     state.errors = {};

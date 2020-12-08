@@ -39,6 +39,6 @@ export default {
   },
   computed: {
     ...mapGetters(["isAuthenticated", "currentUser"])
-  }
+  },
 }
 </script>

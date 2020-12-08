@@ -1,2 +1,6 @@
-export const API_URL = "http://localhost:3000/api/";
-export default API_URL;
+const base = "http://localhost:3001";
+
+export const CONFIG = {
+  API_BASE_URL: base,
+  API_URL: `${base}/api/`,
+}

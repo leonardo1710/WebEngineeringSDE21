@@ -21,12 +21,29 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
-  }
+  },
+
+  // otherwise redirect to home
+  { path: '*', redirect: '/' }
 ]
 
 const router = new VueRouter({
   routes,
   linkExactActiveClass: "active"
+})
+
+router.beforeEach((to, from, next) => {
+  //public pages -> allowed to see if not logged in
+  const publicPages = ['/login', '/'];
+  const authRequired = !publicPages.includes(to.path);
+  const loggedIn = localStorage.getItem('token');
+  
+  // redirect to login page if not logged in and trying to access a restricted page
+  if (authRequired && !loggedIn) {
+    return next('/');
+  }
+
+  next();
 })
 
 export default router
