@@ -61,5 +61,4 @@ This repository provides demo applications presented in the course of Web Engine
 ### Backend
 [Simple Express REST Backend with Authentication](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/SimpleExpressBackend)
 
-[Advanced Express REST Backend](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/ExampleExpressBackend)
-
+[Advanced Express Backend with REST, GraphQL and Authentication](https://github.com/leonardo1710/WebEngineeringSDE21/tree/master/ExampleExpressBackend)
