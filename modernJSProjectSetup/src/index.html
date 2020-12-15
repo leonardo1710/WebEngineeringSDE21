@@ -10,7 +10,11 @@
   <body>
       <h1><%= htmlWebpackPlugin.options.title %></h1>
 
-      <div id="app"></div>
+      <div id="app">
+        <div class="chart-container" style="width: 400px; height: 400px;">
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+      </div>
   </body>
 </html>
 

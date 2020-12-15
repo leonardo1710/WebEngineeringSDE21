@@ -1,4 +1,3 @@
-
 //The path module provides utilities for working with file and directory paths
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -38,7 +37,7 @@ module.exports = {
       template: path.resolve(__dirname, './src/index.html'),
     })
   ],
-  devtool: 'source-map',  // dev tools for debugging
+  //devtool: 'source-map',  // dev tools for debugging
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
   },
